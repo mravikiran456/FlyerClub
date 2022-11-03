@@ -1,0 +1,25 @@
+{
+  "name": "landing",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build:stage": "vite build --mode staging",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^0.27.2",
+    "swiper": "^8.1.5",
+    "vue": "^3.2.25",
+    "vue-writer": "^1.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "tailwindcss": "^3.0.24",
+    "vite": "^2.9.7"
+  }
+}
