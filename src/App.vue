@@ -60,7 +60,7 @@ export default {
         let emailValidation = (email) => {
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email?.toLowerCase())) {
                 emailValid.value = false;                
-                window.location.href = `${import.meta.env.VITE_APP_URL}signup?email=${email?.toLowerCase()}`;
+                // window.location.href = `${import.meta.env.VITE_APP_URL}signup?email=${email?.toLowerCase()}`;
             } else {
                 emailValid.value = true;
             }
@@ -110,8 +110,8 @@ export default {
     <div class="h-screen font-sans" :class="isModel || isContact ? 'overflow-hidden' : ''">
         <nav class="flex items-center justify-between flex-wrap bg-white px-6 py-4">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <img class="hidden lg:block logoClass" src="./assets/images/new-logo-sc.svg" alt="LineSheets Pro">
-                <img class="lg:hidden" src="./assets/images/32.png" alt="LineSheets Pro">
+                <!-- <img class="hidden lg:block logoClass" src="./assets/images/new-logo-sc.svg" alt="Flyer Club"> -->
+                <img class="lg:hidden" src="./assets/images/32.png" alt="Flyer Club">
             </div>
             <div class="block lg:hidden">
                 <button class="flex items-center px-3 py-2 border rounded text-purple border-purple" @click="showMenu">
@@ -139,10 +139,10 @@ export default {
                         class="block text-center mt-4 lg:inline-block lg:mt-0 text-textGray hover:text-purple mr-4">
                         Sign Up
                     </button>
-                    <a v-bind:href='appurl+"login"' @click="showModel"
+                    <!-- <a @click="showModel"
                         class="block text-center mt-4 lg:inline-block lg:mt-0 text-textGray hover:text-purple mr-4">
                         Sign In
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <div class="w-full block xs:hidden flex-grow lg:flex lg:items-center lg:w-auto">
@@ -163,9 +163,9 @@ export default {
                    bg-gradient-to-r from-purpleTo via-purpleFrom to-purpleTo rounded-3xl mr-4 font-bold">Sign
                         Up
                         </button>
-                    <a v-bind:href='appurl+"login"' target="_blank" title="LineSheets Pro Login" class="block lg:inline-block px-5 py-2 text-white 
+                    <!-- <a target="_blank" title="Flyer Club Login" class="block lg:inline-block px-5 py-2 text-white 
                    bg-gradient-to-r from-[#ffb72a] via-[#ffb72a] shadow-orange-button to-[#ffdd99] rounded-3xl">Sign
-                    In</a>
+                    In</a> -->
                 </div>
             </div>
         </nav>
@@ -173,7 +173,7 @@ export default {
             <div class="text-center mx-auto justify-center grid content-center">
                 <h1 class="xl:text-2xl md:text-2xl mt-7 font-light text-textGray">
                     Never Struggle With
-                    <span class="text-purple font-bold">LineSheets</span>
+                    <span class="text-purple font-bold">Flyers</span>
                     <!-- <vue-writer class="text-purple font-bold inline-block" :array="['LineSheets', 'Catalogs']" /> -->
                     Again
                 </h1>
@@ -182,9 +182,9 @@ export default {
                         <vue-writer :array="['Design..', 'Share..', 'Sell..']" />
                         <!-- <vue-writer :array="['Design.. Share.. Sell']" /> -->
                     </div>
-                    <h2 class="text-sm text-textGray xs:pt-2 lg:pt-5">Beautiful LineSheets in a Few Clicks!</h2>
+                    <h2 class="text-sm text-textGray xs:pt-2 lg:pt-5">Beautiful Flyers in a Few Clicks!</h2>
                     <div class="pt-8 text-md sm:w-auto lg:w-[600px] sm:px-4 lg:px-0 mx-auto text-textGray">
-                        <strong> LineSheets Pro </strong> is an easy-to-use automatic catalog maker for sales reps to
+                        <strong> Flyer Club </strong> is an easy-to-use automatic catalog maker for sales reps to
                         create catalogs on the fly, without depending on a designer.
                     </div>
                     <button class="px-5 py-3 ml-2 xs:mt-[0.3rem] lg:mt-6 h-[50px] text-white xs:w-[auto] lg:w-[15%] shadow-button absolute xs:left-[30%] lg:left-[40%]
@@ -208,7 +208,7 @@ export default {
                 </h3>
                 <p class="text-textGray xs:text-sm lg:text-base mt-[1rem]" data-aos="fade-left" data-aos-duration="800">
                     Design, share and sell catalogs in a few clicks without a professional designer. Creating catalogs
-                    to driving sales - get all in one place with LineSheets Pro.
+                    to driving sales - get all in one place with Flyer Club.
                 </p>
             </div>
             <div class="grid grid-cols-3">
@@ -219,7 +219,7 @@ export default {
                     </h4>
                     <p class="pt-3 xs:text-sm lg:text-base  text-textGray xs:mt-1 lg:mt-4">
                         Skip the high fees of designers & the long wait to get high-quality catalogs - because
-                        LineSheets Pro gives you both! transform sales by making LineSheets with lightning speed, on the
+                        Flyer Club gives you both! transform sales by making flyers with lightning speed, on the
                         fly!
                     </p>
                 </div>
@@ -245,7 +245,7 @@ export default {
                         Turnarounds
                     </h4>
                     <p class="pt-3 xs:text-sm lg:text-base  text-textGray xs:mt-1 lg:mt-4">
-                        Never leave your prospects waiting for a revised quote with LineSheets Pro. Edit catalogs on
+                        Never leave your prospects waiting for a revised quote with Flyer Club. Edit catalogs on
                         the fly in a few clicks and share them quickly to achieve faster closures and improve brand
                         reputation.
                     </p>
@@ -261,7 +261,7 @@ export default {
                     </h4>
                     <p data-aos="fade-right" data-aos-duration="800"
                         class="pt-3 xs:text-sm lg:text-base  text-textGray xs:mt-1 lg:mt-4">
-                        LineSheets Pro enables sales reps to share catalogs as PDFs or web pages as soon as they create
+                        Flyer Club enables sales reps to share catalogs as PDFs or web pages as soon as they create
                         it without having to visit them on the ground. This helps save time and expedite sales.
                     </p>
                 </div>
@@ -330,7 +330,7 @@ export default {
                     </h4>
                     <p data-aos="fade-right" data-aos-duration="800"
                         class="pt-3 xs:text-sm lg:text-base text-textGray xs:mt-1 lg:mt-4">
-                        LineSheets Pro is tailor-made for any business! Seamlessly integrate the tool with PIM, ERP &
+                        Flyer Club is tailor-made for any business! Seamlessly integrate the tool with PIM, ERP &
                         eCommerce systems to provide end-to-end visibility of sales and much more!
                     </p>
                 </div>
@@ -382,7 +382,7 @@ export default {
                             11,000+
                         </h4>
                         <p class="text-md text-white">
-                            LineSheets Created
+                            flyers Created
                         </p>
                     </div>
                     <div class="xs:pt-2">
@@ -426,7 +426,7 @@ export default {
                         @click="select(2)">
                         Convert to Cart
                         <span :class="selected == 2 ? 'visible' : 'hidden'" class="py-3 text-sm text-textGray block">
-                            Convert products in LineSheets directly to cart items for checkout!
+                            Convert products in Flyers directly to cart items for checkout!
                         </span>
                     </p>
                     <p :class="selected == 3 ? 'bg-white border-b-2 border-purpleFrom' : 'border-b border-border'"
@@ -434,7 +434,7 @@ export default {
                         @click="select(3)">
                         Download PDF
                         <span :class="selected == 3 ? 'visible' : 'hidden'" class="py-3 text-sm text-textGray block">
-                            Download the LineSheets to share with prospects in a single click!
+                            Download the Flyers to share with prospects in a single click!
                         </span>
                     </p>
                     <p :class="selected == 4 ? 'bg-white border-b-2 border-purpleFrom' : 'border-b border-border'"
@@ -447,14 +447,14 @@ export default {
                     </p>
                 </div>
                 <div class="col-span-2 lg:h-screen 2xl:h-[70vh] grid content-center justify-items-center">
-                    <img class="animate-hinge" alt="Alignments | LineSheets Pro"
+                    <img class="animate-hinge" alt="Alignments | Flyer Club"
                         :class="selected == 1 ? 'visible' : 'hidden'" src="./assets/images/grid/texteasy.png">
                     <img class="text-right animate-hinge" :class="selected == 2 ? 'visible' : 'hidden'"
-                        src="./assets/images/grid/convertcart.png" alt="Convert To Cart | LineSheets Pro">
+                        src="./assets/images/grid/convertcart.png" alt="Convert To Cart | Flyer Club">
                     <img class="text-right animate-hinge" :class="selected == 3 ? 'visible' : 'hidden'"
-                        src="./assets/images/download.png" alt="Download | LineSheets Pro">
+                        src="./assets/images/download.png" alt="Download | Flyer Club">
                     <img class="text-right animate-hinge" :class="selected == 4 ? 'visible' : 'hidden'"
-                        src="./assets/images/grid/analytics.png" alt="Analytics | LineSheets Pro">
+                        src="./assets/images/grid/analytics.png" alt="Analytics | Flyer Club">
                     <img class="text-right animate-hinge" :class="selected == 5 ? 'visible' : 'hidden'"
                         src="./assets/images/grid/allignment.png" alt="Alignmentss">
                 </div>
@@ -466,7 +466,7 @@ export default {
                     data-aos-duration="800">Catalog Management Redefined</h4>
                 <p data-aos="fade-left" data-aos-duration="800"
                     class="lg:pt-3 xs:pt-3 pb-16 xs:text-sm lg:text-base xs:w-[90%] lg:w-6/12 mx-auto text-white text-center">
-                    LineSheets Pro features an intuitive UX, powerful design tools, and drag & drop functionalities that
+                    Flyer Club features an intuitive UX, powerful design tools, and drag & drop functionalities that
                     reduces the complex process of catalog management into 3 simple steps:
                 </p>
                 <div class="grid grid-cols-3 text-center gap-4">
@@ -513,7 +513,7 @@ export default {
                 data-aos-duration="800">Costs Less than your Quarterly Coffee Subscription</p>
             <p data-aos="fade-right" data-aos-duration="800"
                 class="xs:pb-8 lg:pb-16 pt-2 pb-8 xs:text-sm lg:text-base xs:w-[90%] md:[90%] lg:w-9/12 mx-auto text-textGray text-center">
-                LineSheets Pro is super affordable with unique pricing packages to meet diverse business needs. Check
+                Flyer Club is super affordable with unique pricing packages to meet diverse business needs. Check
                 them out below or simply ask for a
                 <a href="#" class="text-purple hover:underline-offset-1"> Custom Quote</a>
             </p>
@@ -526,7 +526,7 @@ export default {
                         <span class="text-sm light">/ Month</span>
                     </p>
                     <p class="text-textGray text-md pt-5">
-                        Want to Try LineSheets Pro
+                        Want to Try Flyer Club
                     </p>
                     <p class="text-textGray text-sm pt-5">
                         <span class="text-xl text-purple align-middle material-symbols-outlined mr-2">
@@ -550,7 +550,7 @@ export default {
                         <span class="text-xl text-purple align-middle material-symbols-outlined mr-2">
                             brush
                         </span>
-                        2 LineSheets
+                        2 Flyers
                     </p>
                     <div class="text-left">
                         <button @click="showModel" class="px-5 py-2 ml-2 mt-5 w-full text-white shadow-button
@@ -589,7 +589,7 @@ export default {
                         <span class="text-xl text-purple align-middle material-symbols-outlined mr-2">
                             brush
                         </span>
-                        Unlimited LineSheets
+                        Unlimited Flyers
                     </p>
                     <div class="text-left">
                         <!-- <button class="bg-gradient-to-r from-purpleFrom via-purpleFrom to-purpleTo w-full hover:bg-white font-bold text-white hover:text-purple border border-purple hover:border-purple py-2 px-3 my-4"
@@ -634,7 +634,7 @@ export default {
                         <span class="text-xl text-white align-middle material-symbols-outlined mr-2">
                             brush
                         </span>
-                        Unlimited LineSheets
+                        Unlimited Flyers
                     </p>
                     <div class="text-left">
                         <button class="bg-white font-bold text-purpleFrom shadow-button
@@ -675,7 +675,7 @@ export default {
                         <span class="text-xl text-purple align-middle material-symbols-outlined mr-2">
                             brush
                         </span>
-                        Unlimited LineSheets
+                        Unlimited Flyers
                     </p>
                     <div class="text-left">
                         <button @click="showModel" class="px-5 py-2 ml-2 mt-5 w-full text-white shadow-button
@@ -707,7 +707,7 @@ export default {
             </h4>
             <p class="pb-8 xs:pt-3 xs:text-sm lg:text-base xs:w-[90%] lg:w-6/12 mx-auto text-textGray text-center"
                 data-aos="fade-left" data-aos-duration="800">
-                Check out what our users have to say about LineSheets Pro.
+                Check out what our users have to say about Flyer Club.
             </p>
             <!-- <img src="./assets/images/testimonial.svg" alt=""> -->
             <div class="grid grid-rows-3 grid-cols-3 gap-7 pb-16">
@@ -745,7 +745,7 @@ export default {
                         </div>
                     </div>
                     <p class="text-xs pt-3 p-3">
-                        “LineSheets Pro has definitely helped us improve our closure rates. The sales team is quick to
+                        “Flyer Club has definitely helped us improve our closure rates. The sales team is quick to
                         make pricing and product edits in the line sheets without relying on designers and send to
                         prospects to start ordering. I totally recommend it!”
                     </p>
@@ -763,7 +763,7 @@ export default {
                         </div>
                     </div>
                     <p class="text-xs pt-3 p-3">
-                        “LineSheets Pro reduced our dependency with designers and enabled us to accelerate our field
+                        “Flyer Club reduced our dependency with designers and enabled us to accelerate our field
                         visits. Edit option of the product data is a super useful feature for our team. ”
                     </p>
                 </div>
@@ -785,7 +785,7 @@ export default {
                 class="bg-white overflow-hidden xs:h-auto lg:h-[142px] shadow-custom p-9 rounded-xl w-[90%] mx-auto lg:absolute top-[1.5rem] left-[5%]">
                 <div class="grid xs:grid-cols-5 lg:grid-cols-6">
                     <div class="cols-span-1 hidden lg:block">
-                        <img class="footerImg" src="./assets/images/grid/ls.png" alt="LineSheets Pro Logo">
+                        <!-- <img class="footerImg" src="./assets/images/grid/ls.png" alt="Flyer Club Logo"> -->
                     </div>
                     <div class="col-span-4 grid content-center">
                         <h4 class="text-header text-3xl font-bold">Never Struggle With Catalogs Again</h4>
@@ -805,13 +805,13 @@ export default {
                     <div
                         class="w-[90%] mx-auto text-center grid xs:grid-cols-1 lg:grid-cols-2 content-start absolute bottom-5 left-[5%]">
                         <div class="">
-                            <p><img class="w-48" src="./assets/images/grid/sc-white.svg"
-                                    alt="SellersCommerce Logo | LineSheets Pro"></p>
+                            <!-- <p><img class="w-48" src="./assets/images/grid/sc-white.svg"
+                                    alt="SellersCommerce Logo | Flyer Club"></p> -->
                             <p class="font-extrabold text-white text-sm text-left mt-3">
-                                © 2022 LineSheets Pro |
-                                <a href="https://www.sellerscommerce.com/privacypolicy" target="_blank"> Privacy Policy
+                                © 2022 Flyer Club |
+                                <a target="_blank"> Privacy Policy
                                 </a> |
-                                <a href="https://www.sellerscommerce.com/termsandconditions" target="_blank"> Terms </a>
+                                <a target="_blank"> Terms </a>
                                 |
                                 <button class="font-extrabold text-white" @click="isContact = true">
                                     Contact Us
@@ -820,20 +820,20 @@ export default {
                         </div>
                         <div class="grid content-center text-right hidden lg:block">
                             <p>
-                                <a href="https://twitter.com/sellerscommerce" target="_blank"
+                                <a target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img src="https://az777500.vo.msecnd.net/images/3554/twitter3.png" alt="Twitter">
                                 </a>
-                                <a href="https://www.linkedin.com/company/sellers-commerce/mycompany/" target="_blank"
+                                <a target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img src="https://az777500.vo.msecnd.net/images/3554/linkedin2.png" alt="LinkedIn">
                                 </a>
-                                <a href="https://www.facebook.com/sellerscommerce" target="_blank"
+                                <a target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img src="https://az777500.vo.msecnd.net/images/3554/facebook-logo.png"
                                         alt="Facebook">
                                 </a>
-                                <a href="https://www.youtube.com/user/sellerscommerce" target="_blank"
+                                <a  target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img src="https://az777500.vo.msecnd.net/images/3554/youtube-last-2.png"
                                         alt="Youtube">
@@ -859,7 +859,7 @@ export default {
                     Sign up for FREE
                 </h4>
                 <h4 class="text-white text-xl font-bold pt-2">
-                    Start using LineSheets Pro in seconds!
+                    Start using Flyer Club in seconds!
                 </h4>
             </div>
             <div

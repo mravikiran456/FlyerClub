@@ -11,39 +11,39 @@
               <span class=" font-25 text-purple align-middle material-symbols-outlined mr-5">
             call
             </span>
-              <p class="font-14">5600 N River Road Suite 800 Rosemont, IL 60018</p>
+              <p class="font-14">Bengaluru,karnataka,560049</p>
             </div>
             <div class="information">
               <span class=" font-25 text-purple align-middle material-symbols-outlined mr-5">
             mail
             </span>
-              <p class="font-14">support@linesheetspro.com</p>
+              <p class="font-14">support@flyerclub.com</p>
             </div>
             <div class="information">
               <span class=" font-25 text-purple align-middle material-symbols-outlined mr-5">
             map
             </span>
-              <p class="font-14">847-656-5770</p>
+              <p class="font-14">842-334-2340</p>
             </div>
           </div>
 
           <div class="social-media">
             <p class="margin-16">Connect with us :</p>
             <div class="social-icons ">
-              <a href="https://twitter.com/sellerscommerce" target="_blank"
+              <a  target="_blank"
               class="inline-block mr-5 cursor-pointer align-middle">
             <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/twitter3.png" alt="Twitter">
             </a>
-              <a href="https://www.linkedin.com/company/sellers-commerce/mycompany/" target="_blank"
+              <a  target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/linkedin2.png" alt="LinkedIn">
                                 </a>
-              <a href="https://www.facebook.com/sellerscommerce" target="_blank"
+              <a  target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/facebook-logo.png"
                                         alt="Facebook">
                                 </a>
-             <a href="https://www.youtube.com/user/sellerscommerce" target="_blank"
+             <a  target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/youtube-last-2.png"
                                         alt="Youtube">
@@ -206,20 +206,20 @@
           <div class="social-media">
             <p class="margin-16">Connect with us :</p>
             <div class="social-icons ">
-              <a href="https://twitter.com/sellerscommerce" target="_blank"
+              <a  target="_blank"
               class="inline-block mr-5 cursor-pointer align-middle">
             <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/twitter3.png" alt="Twitter">
             </a>
-              <a href="https://www.linkedin.com/company/sellers-commerce/mycompany/" target="_blank"
+              <a target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/linkedin2.png" alt="LinkedIn">
                                 </a>
-              <a href="https://www.facebook.com/sellerscommerce" target="_blank"
+              <a  target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/facebook-logo.png"
                                         alt="Facebook">
                                 </a>
-             <a href="https://www.youtube.com/user/sellerscommerce" target="_blank"
+             <a  target="_blank"
                                     class="inline-block mr-5 cursor-pointer align-middle">
                                     <img class="padding-sm" src="https://az777500.vo.msecnd.net/images/3554/youtube-last-2.png"
                                         alt="Youtube">
@@ -389,7 +389,7 @@ setup(){
                     website: Website.value,
                     message: message.value,
                     hs_analytics_source: "REFERRALS",
-                    contact_lead_source: "LineSheets Pro",
+                    contact_lead_source: "Flyer Club",
                     secondary_lead_source: "LPCU",
                   },
                };
